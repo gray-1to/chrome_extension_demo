@@ -6,9 +6,6 @@ document.getElementById("btn").addEventListener("click", async () => {
   });
 });
 
-// function onRun() {
-//   document.body.style.backgroundColor = "#fcc";
-// }
 function onRun() {
   chrome.storage.sync.get(null, (options) => {
     document.body.style.backgroundColor = options.colorValue;
